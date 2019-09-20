@@ -12,8 +12,8 @@ Feature: Validating Amazon Login Functionality
     | There was a problem |
 
     Examples: 
-      | Username               |  | Password     |
-      | kovidmehta10@gmail.com |  | wallahHabibi |
+      | Username     |  | Password     |
+      | YourUsername |  | incorrectPassword |
 
   Scenario Outline: Validate User is able to log out post successful login
     Given User can click on SignIn Option under Accounts and Lists Widget
@@ -22,8 +22,8 @@ Feature: Validating Amazon Login Functionality
     And Click on Log Out to redirect on Sign In Page
 
     Examples: 
-      | Username               |  | Password     |
-      | kovidmehta10@gmail.com |  | honeybees@93 |
+      | Username     |  | Password     |
+      | YourUsername |  | YourPassword |
 
   Scenario Outline: Validate User can log in with valid credentials
     Given User can click on SignIn Option under Accounts and Lists Widget
@@ -31,5 +31,5 @@ Feature: Validating Amazon Login Functionality
     Then Validate User Login
     
      Examples: 
-      | Username               |  | Password     |
-      | kovidmehta10@gmail.com |  | honeybees@93 |
+      | Username     |  | Password     |
+      | YourUsername |  | yourPassword |
