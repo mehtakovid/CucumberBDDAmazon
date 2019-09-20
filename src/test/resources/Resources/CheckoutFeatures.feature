@@ -5,7 +5,7 @@ Feature: Validating Checkout Features
   Background: Pre-requisites for Checkout Features
   Given Website is up and running
   And User can click on SignIn Option under Accounts and Lists Widget
-  When User Enter "kovidmehta10@gmail.com" and "honeybees@93" as credentials
+  When User Enter "yourusername" and "password" as credentials
   Then Validate User Login
 
 
