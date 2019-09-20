@@ -42,7 +42,7 @@ public class Hooks extends BaseClass {
 	@After
 	public void afterScenario() throws IOException {
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\komehta\\eclipse-workspace\\CucumberFramework\\Screenshots\\Ticker-"+i+".jpeg"));
+		FileUtils.copyFile(scrFile, new File("YourScreenshotPathGoesHere"+i+".jpeg"));
 		i++;
 		driver.quit();
 		driver=null;
