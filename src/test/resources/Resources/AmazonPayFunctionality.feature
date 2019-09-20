@@ -6,7 +6,7 @@ Feature: Validating Amazon Pay Features
   Background: Pre-requisites of Amazon Pay Functionality
     Given Website is up and running
     And User can click on SignIn Option under Accounts and Lists Widget
-    When User Enter "kovidmehta10@gmail.com" and "honeybees@93" as credentials
+    When User Enter "yourusername" and "yourpassword" as credentials
     Then Validate User Login
 
   Scenario: Validate post login user can check Amazon Balance
