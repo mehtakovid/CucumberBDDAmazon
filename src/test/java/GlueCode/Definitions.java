@@ -57,7 +57,7 @@ public class Definitions extends BaseClass {
 		}else {
 			log.warn("User not logged in. Retrying.");
 			SignInOption();
-			EnterCreds("kovidmehta10@gmail.com", "honeybees@93");
+			EnterCreds("yourusername", "yourpassword");
 		}
 	}
 	
