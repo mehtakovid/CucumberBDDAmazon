@@ -5,7 +5,7 @@ Feature: Validating Amazon Prime Feature
   Background: Pre-requisites for Amazon Prime Functionality
     Given Website is up and running
     And User can click on SignIn Option under Accounts and Lists Widget
-    When User Enter "kovidmehta10@gmail.com" and "honeybees@93" as credentials
+    When User Enter "YourUsername" and "Password" as credentials
     Then Validate User Login
 
   Scenario: Validate User is able to Check the expiry date of Prime Membership
