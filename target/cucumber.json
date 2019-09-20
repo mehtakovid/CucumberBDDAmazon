@@ -1,0 +1,357 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Pre-requisites of Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 153208601509,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Website is up and running",
+            "match": {
+              "location": "Definitions.WebsiteIsUpandRunning()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-20T07:42:50.961Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9297594860,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initializeChrome()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validate Login fails with invalid credentials",
+        "description": "",
+        "id": "validating-amazon-login-functionality;validate-login-fails-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2198006256,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5340526099,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User can click on SignIn Option under Accounts and Lists Widget",
+            "match": {
+              "location": "Definitions.SignInOption()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4329432386,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Enter \"kovidmehta10@gmail.com\" and \"wallahHabibi\" as credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kovidmehta10@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "wallahHabibi",
+                  "offset": 41
+                }
+              ],
+              "location": "Definitions.EnterCreds(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102001019,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should see Error Message stating Login Failed",
+            "match": {
+              "location": "Definitions.LoginFailedValidation(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "There was a problem"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Pre-requisites of Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23021384180,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Website is up and running",
+            "match": {
+              "location": "Definitions.WebsiteIsUpandRunning()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-20T07:45:45.614Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4072780287,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initializeChrome()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Validate User is able to log out post successful login",
+        "description": "",
+        "id": "validating-amazon-login-functionality;validate-user-is-able-to-log-out-post-successful-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2575192924,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4658153009,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User can click on SignIn Option under Accounts and Lists Widget",
+            "match": {
+              "location": "Definitions.SignInOption()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9843892367,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User Enter \"kovidmehta10@gmail.com\" and \"honeybees@93\" as credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kovidmehta10@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "honeybees@93",
+                  "offset": 41
+                }
+              ],
+              "location": "Definitions.EnterCreds(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196571570,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Validate User Login",
+            "match": {
+              "location": "Definitions.LoginVerification()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.JavascriptException: javascript error: Cannot read property \u0027left\u0027 of undefined\n  (Session info: chrome\u003d76.0.3809.100)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027IN-KOMEHTA-W1\u0027, ip: \u0027172.28.221.207\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\komehta\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 77a5810fab116fd84bcb14b2db5d86e9\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat GlueCode.Definitions.ValidateUserLogOut(Definitions.java:498)\r\n\tat ✽.Click on Log Out to redirect on Sign In Page(file:Resources/AmazonLoginFunctionality.feature:22)\r\n",
+              "duration": 811562629,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "Click on Log Out to redirect on Sign In Page",
+            "match": {
+              "location": "Definitions.ValidateUserLogOut()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Pre-requisites of Login Functionality",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 25033653754,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Website is up and running",
+            "match": {
+              "location": "Definitions.WebsiteIsUpandRunning()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-20T07:46:30.835Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3864338534,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initializeChrome()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Validate User can log in with valid credentials",
+        "description": "",
+        "id": "validating-amazon-login-functionality;validate-user-can-log-in-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2191134045,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5933149003,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User can click on SignIn Option under Accounts and Lists Widget",
+            "match": {
+              "location": "Definitions.SignInOption()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14429873323,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User Enter \"kovidmehta10@gmail.com\" and \"honeybees@93\" as credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kovidmehta10@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "honeybees@93",
+                  "offset": 41
+                }
+              ],
+              "location": "Definitions.EnterCreds(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000392252,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Validate User Login",
+            "match": {
+              "location": "Definitions.LoginVerification()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Amazon Login Functionality",
+    "description": "",
+    "id": "validating-amazon-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:Resources/AmazonLoginFunctionality.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

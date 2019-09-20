@@ -1,0 +1,4 @@
+GlueCode\BaseClass.class
+GlueCode\Hooks.class
+GlueCode\Definitions.class
+runner\CucumberTestRunner.class
