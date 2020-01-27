@@ -1,13 +1,10 @@
 #AmazonPayFunctionality
-@AmazonPay
+@AmazonPay @SSO
 Feature: Validating Amazon Pay Features
 	
 
   Background: Pre-requisites of Amazon Pay Functionality
-    Given Website is up and running
-    And User can click on SignIn Option under Accounts and Lists Widget
-    When User Enter "kovidmehta10@gmail.com" and "newhoneybees@93" as credentials
-    Then Validate User Login
+		Then Validate User Login
 
   Scenario: Validate post login user can check Amazon Balance
     Given User is on Amazon Home Page as a Logged in User

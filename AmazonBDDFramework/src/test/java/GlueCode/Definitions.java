@@ -7,17 +7,14 @@ import java.util.List;
 import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -27,15 +24,6 @@ public class Definitions extends BaseClass {
 
 	public static final Logger log = getLogger(Definitions.class);
 	
-	@Given("^WebDriver is initialized$")
-	public void WebDriver_is_initialized() {
-		log.info("WebDriver initialization started.");
-		System.setProperty("webdriver.chrome.driver", ".//Drivers/chromedriver.exe");
-	    driver = new ChromeDriver();
-	    wait = new WebDriverWait(driver,30);
-	    log.info("WebDriver initialization completed.");
-		
-	}
 	
 	@Given("^Website is up and running$")
 	public boolean WebsiteIsUpandRunning() {
@@ -119,7 +107,7 @@ public class Definitions extends BaseClass {
 	    	log.fatal("Products not displayed as per the search.");
 	    	return false;
 	    }
-	}
+	} 
 
 	@When("^User Enter \"(.*)\" and \"(.*)\" as credentials$")
 	public static void EnterCreds(String Username, String Password) {

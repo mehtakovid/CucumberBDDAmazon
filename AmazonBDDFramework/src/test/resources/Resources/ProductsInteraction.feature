@@ -1,12 +1,9 @@
 #ProductsInteraction
-@ProductsInteraction
+@ProductsInteraction @SSO
 Feature: Validating user interacting with Products on Amazon
 
-  Background: Pre-requisites for Products interaction
-    Given Website is up and running
-    And User can click on SignIn Option under Accounts and Lists Widget
-    When User Enter "kovidmehta10@gmail.com" and "newhoneybees@93" as credentials
-    Then Validate User Login
+  Background: Pre-requisites of Amazon Pay Functionality
+		Then Validate User Login
     
 
   Scenario: User search a Product on Amazon and Add the product in the Wishlist

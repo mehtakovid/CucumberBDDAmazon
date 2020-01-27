@@ -1,13 +1,9 @@
 #CheckoutFeatures
-@Checkout
+@Checkout @SSO
 Feature: Validating Checkout Features
   
-  Background: Pre-requisites for Checkout Features
-  Given Website is up and running
-  And User can click on SignIn Option under Accounts and Lists Widget
-  When User Enter "kovidmehta10@gmail.com" and "newhoneybees@93" as credentials
-  Then Validate User Login
-
+  Background: Pre-requisites of Amazon Pay Functionality
+		Then Validate User Login
 
   Scenario: User is able to Choose Delivery Option when purchasing a product
     Given User is on Amazon Home Page as a Logged in User
