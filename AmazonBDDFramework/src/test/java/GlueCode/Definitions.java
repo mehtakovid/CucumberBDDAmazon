@@ -22,7 +22,7 @@ import io.cucumber.java.en.When;
 
 public class Definitions extends BaseClass {
 
-	public static final Logger log = getLogger(Definitions.class);
+	public static final Logger log = Logger.getLogger(Definitions.class);
 	
 	
 	@Given("^Website is up and running$")
